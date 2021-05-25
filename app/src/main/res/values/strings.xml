@@ -2,4 +2,7 @@
     <string name="app_name">NeoCyberFashion</string>
     <string name="splash_screen">Splash Screen</string>
     <string name="start_shopping">Start Shopping</string>
+    <string name="girl_image">Girl Image</string>
+    <string name="continue_button">Continue Button</string>
+    <string name="welcome">Welcome</string>
 </resources>
