@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "267311707457",
+    "project_id": "neocyberfashion-45ce2",
+    "storage_bucket": "neocyberfashion-45ce2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:267311707457:android:de2fb15f5bbbbb1d829dc0",
+        "android_client_info": {
+          "package_name": "com.neocyberfashion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "267311707457-us2gjbpkomlbc8o1r0npddqo15e3v6rk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoVCM86vqHX-s-UISm4Zgx61vEVAb9bV8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "267311707457-us2gjbpkomlbc8o1r0npddqo15e3v6rk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
