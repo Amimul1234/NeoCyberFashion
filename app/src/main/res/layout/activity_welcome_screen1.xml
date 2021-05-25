@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -40,13 +41,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sign up to get started and experience\ngreat shopping deals"
+            android:text="@string/sign_up_to_get_started_and_experience_ngreat_shopping_deals"
             android:layout_below="@+id/welcome_text"
             android:textAlignment="center"
             android:textSize="14sp"
             android:fontFamily="@font/montserrat_regular"/>
-
-
 
     </RelativeLayout>
 
