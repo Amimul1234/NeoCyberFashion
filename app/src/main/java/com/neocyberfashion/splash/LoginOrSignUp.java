@@ -5,27 +5,31 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.ImageView;
+import android.widget.Button;
+import android.widget.TextView;
 import com.neocyberfashion.R;
+import com.neocyberfashion.login.SignIn;
 
-public class WelcomeScreen1 extends AppCompatActivity {
+public class LoginOrSignUp extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_welcome_screen1);
+        setContentView(R.layout.activity_login_or_sign_up);
 
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        ImageView continueButton = findViewById(R.id.continue_image);
+        Button signInButton = findViewById(R.id.signInButton);
+        TextView signUpText = findViewById(R.id.signUp);
 
-        continueButton.setOnClickListener(v -> {
-            Intent intent = new Intent(WelcomeScreen1.this, LoginOrSignUp.class);
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        signInButton.setOnClickListener(v -> {
+            Intent intent = new Intent(LoginOrSignUp.this, SignIn.class);
             startActivity(intent);
-            finish();
+        });
+
+        signUpText.setOnClickListener(v -> {
+
         });
     }
 }

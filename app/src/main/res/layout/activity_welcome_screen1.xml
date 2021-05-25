@@ -10,7 +10,7 @@
     <ImageView
         android:id="@+id/girl_image"
         android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_height="520dp"
         android:src="@drawable/splash02"
         android:scaleType="fitXY"
         app:layout_constraintTop_toTopOf="parent"
@@ -41,7 +41,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/sign_up_to_get_started_and_experience_ngreat_shopping_deals"
+            android:text="@string/promo"
             android:layout_below="@+id/welcome_text"
             android:textAlignment="center"
             android:textSize="14sp"
@@ -53,7 +53,7 @@
     <ImageView
         android:id="@+id/continue_image"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="65dp"
         android:src="@drawable/bottom"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
