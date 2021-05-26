@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import com.neocyberfashion.R;
 import com.neocyberfashion.login.SignIn;
+import com.neocyberfashion.register.RegisterNewUser;
 
 public class LoginOrSignUp extends AppCompatActivity {
 
@@ -29,7 +30,8 @@ public class LoginOrSignUp extends AppCompatActivity {
         });
 
         signUpText.setOnClickListener(v -> {
-
+            Intent intent = new Intent(LoginOrSignUp.this, RegisterNewUser.class);
+            startActivity(intent);
         });
     }
 }
