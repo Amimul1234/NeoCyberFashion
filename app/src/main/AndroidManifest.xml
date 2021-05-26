@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.neocyberfashion">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,10 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NeoCyberFashion">
-        <activity android:name=".register.RegisterNewUser"></activity>
+
+        <activity android:name=".register.RegisterNewUser"/>
         <activity android:name=".login.SignIn" />
         <activity android:name=".splash.LoginOrSignUp" />
         <activity android:name=".splash.WelcomeScreen1" />
+
         <activity android:name=".splash.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,6 +24,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>
