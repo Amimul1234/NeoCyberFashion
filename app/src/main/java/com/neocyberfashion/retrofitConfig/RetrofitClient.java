@@ -20,6 +20,8 @@ public class RetrofitClient {
                 .connectTimeout(90, TimeUnit.SECONDS)
                 .build();
 
+
+
         retrofit = new Retrofit.Builder()
                 .baseUrl(BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create())

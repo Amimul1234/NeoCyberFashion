@@ -8,8 +8,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 import com.neocyberfashion.R;
-import com.neocyberfashion.login.SignIn;
-import com.neocyberfashion.register.RegisterNewUser;
+import com.neocyberfashion.login.SignInUser;
 
 public class LoginOrSignUp extends AppCompatActivity {
 
@@ -25,12 +24,12 @@ public class LoginOrSignUp extends AppCompatActivity {
         TextView signUpText = findViewById(R.id.signUp);
 
         signInButton.setOnClickListener(v -> {
-            Intent intent = new Intent(LoginOrSignUp.this, SignIn.class);
+            Intent intent = new Intent(LoginOrSignUp.this, SignInUser.class);
             startActivity(intent);
         });
 
         signUpText.setOnClickListener(v -> {
-            Intent intent = new Intent(LoginOrSignUp.this, RegisterNewUser.class);
+            Intent intent = new Intent(LoginOrSignUp.this, SignInUser.class);
             startActivity(intent);
         });
     }

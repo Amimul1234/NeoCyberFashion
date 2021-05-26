@@ -12,8 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NeoCyberFashion">
 
-        <activity android:name=".register.RegisterNewUser"/>
-        <activity android:name=".login.SignIn" />
+        <activity android:name=".login.SignInUser"/>
         <activity android:name=".splash.LoginOrSignUp" />
         <activity android:name=".splash.WelcomeScreen1" />
 
