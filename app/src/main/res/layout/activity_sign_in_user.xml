@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".login.SignInUser">
 
@@ -130,6 +131,7 @@
         android:layout_marginTop="15dp"/>
 
 
+
     <com.google.android.material.button.MaterialButton
         android:id="@+id/signInButton"
         android:layout_width="match_parent"
@@ -144,10 +146,23 @@
         android:textAllCaps="false"
         android:textSize="14sp"
         android:fontFamily="@font/montserrat_bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="80dp"/>
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/signUpLayout"
+        android:layout_below="@+id/signInButton"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/semi_red" />
+
+
 
     <LinearLayout
+        android:id="@+id/signUpLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
