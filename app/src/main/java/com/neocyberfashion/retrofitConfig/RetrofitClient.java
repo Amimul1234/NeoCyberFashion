@@ -37,9 +37,13 @@ public class RetrofitClient {
         return mInstance;
     }
 
-    public Api getApi()
+    public Api getGeneralApis()
     {
         return retrofit.create(Api.class);
     }
 
+    public AuthApi getAuthApis()
+    {
+        return retrofit.create(AuthApi.class);
+    }
 }

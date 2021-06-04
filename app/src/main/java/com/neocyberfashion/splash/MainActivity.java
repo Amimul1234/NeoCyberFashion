@@ -10,6 +10,8 @@ import android.view.WindowManager;
 import android.widget.TextView;
 import com.neocyberfashion.R;
 
+import io.paperdb.Paper;
+
 public class MainActivity extends AppCompatActivity {
 
     private int state = 0;
@@ -18,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Paper.init(this);
 
         //Change status bar color
 //        getWindow().setStatusBarColor(Color.parseColor("#4E0F0E"));
