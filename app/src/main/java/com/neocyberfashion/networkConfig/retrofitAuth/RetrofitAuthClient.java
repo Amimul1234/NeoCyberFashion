@@ -1,19 +1,21 @@
-package com.neocyberfashion.retrofitConfig;
+package com.neocyberfashion.networkConfig.retrofitAuth;
 
+import com.neocyberfashion.networkConfig.AuthApi;
+import com.neocyberfashion.networkConfig.HostAddress;
 import java.util.concurrent.TimeUnit;
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
-import static com.neocyberfashion.retrofitConfig.HostAddress.HOST_ADDRESS;
 
-public class RetrofitClient {
+public class RetrofitAuthClient {
 
-    private static Retrofit retrofit;
-    private static RetrofitClient mInstance;
-    private static final String BASE_URL = HOST_ADDRESS.getHostAddress();
+    private static Retrofit retrofit = null;
+    private static RetrofitAuthClient retrofitAuthClient;
 
-    private RetrofitClient()
-    {
+    private RetrofitAuthClient() {
+
+        String hostAddress = HostAddress.HOST_ADDRESS.getHostAddress();
+
         final OkHttpClient okHttpClient = new OkHttpClient.Builder()
                 .readTimeout(90, TimeUnit.SECONDS)
                 .writeTimeout(90, TimeUnit.SECONDS)
@@ -21,25 +23,17 @@ public class RetrofitClient {
                 .build();
 
         retrofit = new Retrofit.Builder()
-                .baseUrl(BASE_URL)
+                .baseUrl(hostAddress)
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(okHttpClient)
                 .build();
     }
 
-    public static RetrofitClient getInstance()
-    {
-        if(mInstance == null)
-        {
-            mInstance = new RetrofitClient();
-        }
+    public static RetrofitAuthClient getRetrofitAuthClient() {
+        if(retrofitAuthClient == null)
+            retrofitAuthClient = new RetrofitAuthClient();
 
-        return mInstance;
-    }
-
-    public Api getGeneralApis()
-    {
-        return retrofit.create(Api.class);
+        return retrofitAuthClient;
     }
 
     public AuthApi getAuthApis()

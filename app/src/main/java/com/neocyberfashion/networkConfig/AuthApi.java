@@ -1,4 +1,4 @@
-package com.neocyberfashion.retrofitConfig;
+package com.neocyberfashion.networkConfig;
 
 import com.neocyberfashion.login.AuthenticationResponse;
 import com.neocyberfashion.register.UserRegistration;

@@ -1,4 +1,4 @@
-package com.neocyberfashion.retrofitConfig;
+package com.neocyberfashion.networkConfig;
 
 public enum HostAddress {
 
