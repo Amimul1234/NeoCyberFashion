@@ -16,4 +16,7 @@
     <string name="enter_your_password">Enter your password</string>
     <string name="forget_password">Forget Password?</string>
     <string name="already_have_an_account">Already have an account?</string>
+    <string name="user_name">User Name</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="sign_up">Sign Up</string>
 </resources>
