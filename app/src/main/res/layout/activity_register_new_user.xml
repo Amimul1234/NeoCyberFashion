@@ -12,7 +12,7 @@
         android:id="@+id/signInText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/sign_in"
+        android:text="@string/sign_up"
         android:textColor="@color/semi_red"
         android:textSize="18sp"
         android:layout_alignParentEnd="true"
@@ -27,41 +27,33 @@
         android:src="@drawable/logo"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/signInText"
-        android:layout_marginTop="26dp"
+        android:layout_marginTop="25dp"
         android:contentDescription="@string/logo" />
 
-<!--    <RelativeLayout-->
-<!--        android:id="@+id/welcome_layout"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_below="@+id/logo"-->
-<!--        android:layout_marginTop="50dp"-->
-<!--        android:layout_centerHorizontal="true"-->
-<!--        >-->
+    <FrameLayout
+        android:id="@+id/profile_image_frame"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
 
-<!--        <TextView-->
-<!--            android:id="@+id/welcome_text"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="@string/welcome"-->
-<!--            android:layout_centerHorizontal="true"-->
-<!--            android:layout_marginBottom="10dp"-->
-<!--            android:textSize="24sp"-->
-<!--            android:textStyle="bold"-->
-<!--            android:textColor="@color/black"-->
-<!--            android:fontFamily="@font/montserrat_bold"/>-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="145dp"
+            android:layout_height="145dp"
+            android:src="@drawable/avatar"
+            android:layout_gravity="bottom|center_horizontal" />
 
-<!--        <TextView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="@string/promo"-->
-<!--            android:layout_below="@+id/welcome_text"-->
-<!--            android:textAlignment="center"-->
-<!--            android:textSize="12sp"-->
-<!--            android:textColor="@color/black"-->
-<!--            android:fontFamily="@font/montserrat_regular"/>-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/add_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_baseline_add_24"
+            android:layout_gravity="top|end"
 
-<!--    </RelativeLayout>-->
+            />
+    </FrameLayout>
 
 
     <TextView
@@ -69,7 +61,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/email"
-        android:layout_below="@+id/welcome_layout"
+        android:layout_below="@+id/profile_image_frame"
         android:layout_marginTop="60dp"
         android:layout_marginStart="20dp"
         android:fontFamily="@font/montserrat_regular"
@@ -118,7 +110,6 @@
         android:inputType="textPassword"
         android:autofillHints="Email Address" />
 
-
     <com.google.android.material.button.MaterialButton
         android:id="@+id/signInButton"
         android:layout_width="match_parent"
@@ -135,7 +126,6 @@
         android:fontFamily="@font/montserrat_bold"
         app:layout_constraintBottom_toBottomOf="parent"/>
 
-
     <ProgressBar
         android:id="@+id/progressBar"
         android:visibility="gone"
@@ -145,8 +135,6 @@
         android:layout_below="@+id/signInButton"
         android:layout_centerHorizontal="true"
         android:backgroundTint="@color/semi_red" />
-
-
 
     <LinearLayout
         android:id="@+id/signUpLayout"
@@ -159,16 +147,16 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/don_t_have_an_account"
+            android:text="@string/already_have_an_account"
             android:textColor="@color/black"
             android:fontFamily="@font/montserrat_regular"
             android:textSize="14sp"/>
 
         <TextView
-            android:id="@+id/signUp"
+            android:id="@+id/signIn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/sign_up"
+            android:text="@string/sign_in"
             android:textColor="#FA4248"
             android:layout_marginStart="5dp"/>
 
